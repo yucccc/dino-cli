@@ -209,7 +209,7 @@ async function init() {
     `template/${template}`,
   )
 
-  const write = (file, content) => {
+  const write = (file, content?) => {
     const targetPath = path.join(root, renameFiles[file] ?? file)
     if (content) {
       fs.writeFileSync(targetPath, content)
