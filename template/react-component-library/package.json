@@ -2,7 +2,6 @@
   "name": "react-component-library",
   "version": "0.0.1",
   "description": "template for react component",
-  "type": "module",
   "main": "./dist/cjs/index.js",
   "module": "./dist/esm/index.js",
   "types": "./dist/index.d.ts",
@@ -19,8 +18,7 @@
     "test": "echo \"Error: no test specified\" && exit 1",
     "storybook": "start-storybook -p 6006",
     "build-storybook": "build-storybook",
-    "build": "unbuild",
-    "build-r": "rollup -c"
+    "build": "rollup -c"
   },
   "author": "yucccc",
   "license": "ISC",
