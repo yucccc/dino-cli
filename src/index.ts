@@ -127,18 +127,18 @@ async function init() {
         },
         {
           // 如果还有下一层
-          type: framework => framework && framework.variants ? 'select' : null,
-          name: 'variant',
-          message: reset('Select a variant:'),
-          choices: framework =>
-            framework.variants.map((variant) => {
-              const variantColor = variant.color
-              return {
-                title: variantColor(variant.display || variant.name),
-                value: variant.name,
-              }
-            }),
-        },
+        //   type: framework => framework && framework.variants ? 'select' : null,
+        //   name: 'variant',
+        //   message: reset('Select a variant:'),
+        //   choices: framework =>
+        //     framework.variants.map((variant) => {
+        //       const variantColor = variant.color
+        //       return {
+        //         title: variantColor(variant.display || variant.name),
+        //         value: variant.name,
+        //       }
+        //     }),
+        // },
       ],
       {
         onCancel: () => {
