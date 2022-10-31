@@ -1,5 +1,5 @@
 {
-  "name": "dino-cli",
+  "name": "create-dino",
   "type": "module",
   "version": "0.0.1",
   "description": "Quickly create business templates",
@@ -15,6 +15,7 @@
     "debug": "node --inspect-brk ./bin/index.js",
     "preinstall": "npx only-allow pnpm"
   },
+  "files": ["bin", "src", "template"],
   "dependencies": {},
   "devDependencies": {
     "cross-spawn": "^7.0.3",
