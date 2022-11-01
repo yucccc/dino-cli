@@ -14,5 +14,10 @@ module.exports = {
   },
   "features": {
     "storyStoreV7": true
-  }
+  },
+  async viteFinal(config) {
+    // base需要修改为你项目的目录路径
+    config.base = '/react-component-library-template/'
+    return config
+  },
 }
