@@ -1,12 +1,12 @@
+import { readFileSync } from 'node:fs';
+
 import resolve from "@rollup/plugin-node-resolve";
 import commonjs from "@rollup/plugin-commonjs";
 import typescript from "@rollup/plugin-typescript";
 import dts from "rollup-plugin-dts";
-import { readFileSync } from 'node:fs';
+import postcss from "rollup-plugin-postcss";
 
 const pkg = JSON.parse(readFileSync('./package.json'));
-
-import postcss from "rollup-plugin-postcss";
 
 
 export default [
@@ -21,7 +21,6 @@ export default [
       },
       {
         file:  pkg.module,
-        // file: "./dist/index.mjs",
         format: "esm",
         sourcemap: true,
       },
